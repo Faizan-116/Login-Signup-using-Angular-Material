@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+  <div class="card my-5 col-lg-6
+     col-sm-12 col-md-6 m-2 ">
+    <h1 class="m-2">Account Login</h1>
+    <form class="example-form">
+      <div>
+        <mat-form-field class="m-2 py-2 " appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+            placeholder="Ex. pat@example.com">
+          <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button class="hide" classmat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <div class="row justify-content-between ml-2 mr-2 p-2">
+          <div>
+            <mat-checkbox color= 'primary'>Remember me</mat-checkbox>
+          </div>
+          <div>
+            <a href="/forget-password"><u>Forget Password?</u></a>
+          </div>
+        </div>
+        <div class="m-2">
+          <button mat-raised-button class="btn-block" color="primary">Login</button>
+          <div class=" row justify-content-center m-2">
+            <mat-label>Did not have account?</mat-label>
+          <a href="/Sign-Up">Sign Up</a>
+
+          </div>
+                  </div>
+       
+
+      </div>
+    </form>
+
+
+
+
+  </div>
+  <div>
+
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+.hide{
+    
+    border: none !important;
+
+}
+h1{
+    color: rgb(95, 79, 238);
+}
+.card{
+    border-right: 20px solid rgb(95, 79, 238);
+}
