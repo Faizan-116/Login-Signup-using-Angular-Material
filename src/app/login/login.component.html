@@ -4,7 +4,7 @@
     <h1 class="m-2">Account Login</h1>
     <form class="example-form">
       <div>
-        <mat-form-field class="m-2 py-2 " appearance="fill">
+        <mat-form-field class=" " appearance="fill">
           <mat-label>Email</mat-label>
           <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
             placeholder="Ex. pat@example.com">
@@ -28,30 +28,22 @@
         </mat-form-field>
         <div class="row justify-content-between ml-2 mr-2 p-2">
           <div>
-            <mat-checkbox color= 'primary'>Remember me</mat-checkbox>
+            <mat-checkbox color='primary'>Remember me</mat-checkbox>
           </div>
           <div>
             <a href="/forget-password"><u>Forget Password?</u></a>
           </div>
         </div>
-        <div class="m-2">
+        <div >
           <button mat-raised-button class="btn-block" color="primary">Login</button>
           <div class=" row justify-content-center m-2">
             <mat-label>Did not have account?</mat-label>
-          <a href="/Sign-Up">Sign Up</a>
-
+            <a href="/Sign-Up">Sign Up</a>
           </div>
-                  </div>
-       
-
+        </div>
       </div>
     </form>
-
-
-
-
   </div>
   <div>
-
   </div>
 </div>

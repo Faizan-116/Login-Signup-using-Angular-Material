@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 
 
 
@@ -40,7 +41,8 @@ import { ForgetComponent } from './forget/forget.component';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    NgxIntlTelInputModule
     
   ],
   providers: [],

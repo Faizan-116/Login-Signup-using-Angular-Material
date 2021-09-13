@@ -26,6 +26,10 @@ export class SignUPComponent implements OnInit {
     Validators.required,
     Validators.email,
   ]);
+  passwordFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
 
   matcher = new MyErrorStateMatcher();
   hide = true;
